@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="user-info">
+            <p>Welcome back, <span id="displayUsername" style="color: #00d2ff; font-weight: 600;">User</span>!</p>
+            <p id="displayEmail" style="font-size: 12px; opacity: 0.8;"></p>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: left;">
+            <p style="color: #fff; margin-bottom: 10px;">Your Profile Details:</p>
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+                <p>Full Name: <span id="fullName">Loading...</span></p>
+            </div>
+        </div>
+
+        <button onclick="logout()" style="background: linear-gradient(45deg, #ff416c, #ff4b2b); margin-top: 30px;">
+            Logout
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        window.onload = () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            const token = localStorage.getItem('token');
+
+            if (!token || !user) {
+                window.location.href = 'index.html'; 
+            } else {
+                document.getElementById('displayUsername').innerText = user.username;
+                document.getElementById('displayEmail').innerText = user.email;
+                document.getElementById('fullName').innerText = `${user.firstName} ${user.lastName}`;
+            }
+        };
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
