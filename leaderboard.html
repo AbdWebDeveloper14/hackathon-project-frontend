@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | HelpHub AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar-wrapper container">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <div class="logo-box">H</div>
+                <span class="logo-name">HelpHub AI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="leaderboard.html" class="nav-link active">Leaderboard</a>
+            </div>
+            <button class="btn-platform">My Profile</button>
+        </div>
+    </nav>
+
+    <main class="leaderboard-main container">
+        <header class="leaderboard-header">
+            <p class="tag-mini">COMMUNITY RANKINGS</p>
+            <h1>Meet our top contributors.</h1>
+            <p>The most trusted helpers in the HelpHub AI ecosystem based on their Trust Score and solved requests.</p>
+        </header>
+
+        <div class="leaderboard-container card-premium">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>User</th>
+                        <th>Location</th>
+                        <th>Skills</th>
+                        <th>Trust Score</th>
+                        <th>Badges</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

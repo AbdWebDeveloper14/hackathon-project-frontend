@@ -3,18 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>HelpHub AI | Community Ecosystem</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-  <h2>Login</h2>
-  <input id="username" placeholder="Username">
-  <input id="email" placeholder="Email">
-  <input id="password" type="password" placeholder="Password">
-  <button onclick="login()">Login</button>
-  <p class="signupkey"><a href="signup.html">Don't have an account? Signup</a></p>
-</div>
-<script src="app.js"></script>
+
+    <nav class="navbar-wrapper container">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <div class="logo-box">H</div>
+                <span class="logo-name">HelpHub AI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+            </div>
+            <div class="nav-right">
+                <a href="auth.html"><button class="btn-platform">Join Platform</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section container">
+        <div class="hero-grid">
+            <div class="hero-main-card">
+                <p class="tag-mini">SMIT GRAND CODING NIGHT 2026</p>
+                <h1 class="display-text">Find help faster. Become help that matters.</h1>
+                <p class="hero-sub">A community-powered support network for students, mentors, and creators. Ask for help, offer help, and track your impact.</p>
+                
+                <div class="hero-btns">
+                    <button class="btn-primary"><a href="post-request.html" id="btn-1">Post a request</a></button>
+                    <button class="btn-secondary">View Feed</button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>384+</strong><br><span>Members</span></div>
+                    <div class="stat-item"><strong>54+</strong><br><span>Requests</span></div>
+                    <div class="stat-item"><strong>23+</strong><br><span>Solved</span></div>
+                </div>
+            </div>
+
+            <div class="hero-side-card">
+                <p class="tag-mini" style="color: var(--teal-primary);">LIVE PRODUCT FEEL</p>
+                <h2>More than a form. More like an ecosystem.</h2>
+                <div class="feature-pill">
+                    <strong>AI Intelligence</strong>
+                    <p>Auto-categorization & urgency detection.</p>
+                </div>
+                <div class="feature-pill">
+                    <strong>Trust Graph</strong>
+                    <p>Badges & helper rankings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works container">
+        <p class="tag-mini" style="text-align: center;">CORE FLOW</p>
+        <h2 class="section-title">From struggling alone to solving together</h2>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">01</div>
+                <h3>Ask clearly</h3>
+                <p>Create structured requests with AI-suggested categories and tags.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">02</div>
+                <h3>Find the experts</h3>
+                <p>Our algorithm matches your request with the best helpers available.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">03</div>
+                <h3>Track Impact</h3>
+                <p>Solve problems and grow your Trust Score in the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section container">
+        <div class="cta-box">
+            <h2>Ready to make an impact?</h2>
+            <p>Join hundreds of developers and designers solving real-world problems.</p>
+            <button class="btn-primary" style="background: white; color: var(--teal-primary);">Get Started Now</button>
+        </div>
+    </section>
+
 </body>
 </html>

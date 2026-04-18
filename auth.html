@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join HelpHub AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display:flex; align-items:center; justify-content:center; min-height:100vh;">
+
+    <div class="card-premium" style="width:450px;">
+        <div id="loginSection">
+            <h2 style="margin-bottom:20px;">Welcome Back</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" class="custom-input" style="margin-bottom:15px;" required>
+                <input type="password" id="loginPass" placeholder="Password" class="custom-input" style="margin-bottom:15px;" required>
+                <button type="submit" class="btn-platform" style="width:100%;">Login</button>
+            </form>
+            <p style="margin-top:15px; font-size:14px;">Don't have an account? <a href="#" onclick="toggleAuth()">Sign Up</a></p>
+        </div>
+
+        <div id="signupSection" style="display:none;">
+            <h2 style="margin-bottom:20px;">Create Account</h2>
+            <form id="signupForm">
+                <input type="text" id="signName" placeholder="Full Name" class="custom-input" style="margin-bottom:10px;" required>
+                <input type="email" id="signEmail" placeholder="Email" class="custom-input" style="margin-bottom:10px;" required>
+                <input type="password" id="signPass" placeholder="Password" class="custom-input" style="margin-bottom:10px;" required>
+                <input type="text" id="signLoc" placeholder="Location (e.g. Karachi)" class="custom-input" style="margin-bottom:15px;">
+                <button type="submit" class="btn-platform" style="width:100%;">Create Account</button>
+            </form>
+            <p style="margin-top:15px; font-size:14px;">Already have an account? <a href="#" onclick="toggleAuth()">Login</a></p>
+        </div>
+        <div id="authMsg" style="margin-top:15px; text-align:center; font-weight:600;"></div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

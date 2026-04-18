@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Feed | HelpHub AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar-wrapper container">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <div class="logo-box">H</div>
+                <span class="logo-name">HelpHub AI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="explore.html" class="nav-link active">Explore</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+            </div>
+            <button class="btn-platform">Join Platform</button>
+        </div>
+    </nav>
+
+    <main class="explore-main container">
+        <header class="explore-banner">
+            <p class="tag-mini">EXPLORE / FEED</p>
+            <h1>Browse help requests with filterable community context.</h1>
+            <p class="subtext">Filter by category, urgency, skills, and location to surface the best matches.</p>
+        </header>
+
+        <div class="explore-content">
+            <aside class="filter-sidebar">
+                <p class="tag-mini">FILTERS</p>
+                <h2 class="sidebar-title">Refine the feed</h2>
+                
+                <form id="filterForm">
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <select name="category" id="catFilter">
+                            <option value="">All categories</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Design">Design</option>
+                            <option value="Career">Career</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Urgency</label>
+                        <select name="urgency" id="urgencyFilter">
+                            <option value="">All urgency levels</option>
+                            <option value="High">High Priority</option>
+                            <option value="Medium">Medium Priority</option>
+                            <option value="Low">Low Priority</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <input type="text" name="location" id="locFilter" placeholder="Karachi, Remote..." class="custom-input">
+                    </div>
+                </form>
+            </aside>
+
+            <section class="feed-area" id="requestsFeed">
+                </section>
+        </div>
+    </main>
+
+    <script src="explore.js"></script>
+</body>
+</html>
