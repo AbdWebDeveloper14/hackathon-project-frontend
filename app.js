@@ -1,4 +1,5 @@
-const API = "https://hackathon-project-production-db71.up.railway.app";
+// Localhost ki tarah poora path dalo
+const API = "https://hackathon-project-production-db71.up.railway.app/api/auth";
 
 async function signup() {
     try {
